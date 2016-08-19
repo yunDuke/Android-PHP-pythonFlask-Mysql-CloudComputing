@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".BTClient" >
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:onClick="onConnectButtonClicked"
+        android:text="connect" />
+
+    <Button
+        android:id="@+id/Button06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button03"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:onClick="onQuitButtonClicked"
+        android:text="quit" />
+
+    <EditText
+        android:id="@+id/incode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button06"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:onClick="set"
+        android:text="set" />
+
+</RelativeLayout>

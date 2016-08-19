@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="6dp"
+        android:layout_x="68dp"
+        android:layout_y="3dp"
+        android:text="Reserve a Parking Space"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/timeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="21dp"
+        android:text="Start Parking Time:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/totalview"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/amountpicker"
+        android:layout_marginTop="23dp"
+        android:text="Total Fee"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/hourview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/amountpicker"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="76dp"
+        android:text="Park Hours:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalview"
+        android:layout_alignBottom="@+id/totalview"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginRight="19dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/showtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeview"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/timeview"
+        android:text="" />
+
+    <NumberPicker
+        android:id="@+id/amountpicker"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showtime"
+        android:layout_below="@+id/showtime"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_toRightOf="@+id/timeview"
+        android:background="@drawable/op_bg_selector"
+        android:onClick="check"
+        android:text="Check" />
+
+</RelativeLayout>

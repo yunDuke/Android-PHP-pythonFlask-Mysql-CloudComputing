@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.parklot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="org.catours.tourfinder.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_title"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="app.user.Splash"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+                  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         
+         
+        </activity>
+        
+        <activity
+            android:name="app.activities.Donate"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="app.user.Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="app.user.Register"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="app.activities.lotsdetail"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="app.activities.parklot"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".pay.add"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".pay.paylist"
+            android:label="@string/app_name" >
+             
+        </activity>
+        
+         <activity android:name="app.activities.tab" >
+             
+          
+             </activity>
+        
+        <activity
+            android:name="app.activities.ParklotDetailFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="app.user.change"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="app.map.first"
+            android:label="@string/app_name" >
+          
+        </activity>
+        <activity
+            android:name="app.options.delete"
+            android:label="@string/app_name" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCULEzA7hayA63tcLnHWXpgfE-jSipy3aI" />
+
+        <activity
+            android:name=".Newp"
+            android:label="@string/title_activity_newp" >
+        </activity>
+        
+          <activity
+            android:name="main.MainActivity"
+          
+            android:label="@string/app_name" >
+           
+        </activity>
+            <activity
+            android:name="app.parklot.selfin"
+          
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+           <activity
+            android:name="app.activities.ownparklot"
+          
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name="app.activities.ordershow"
+          
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+        <activity
+            android:name="app.parklot.start"
+          
+            android:label="@string/app_name" >
+           
+        </activity>
+        		<activity android:name="com.test.BTClient.DeviceListActivity"
+                  android:label="choose device"
+             />
+        		
+        <activity
+            android:name="com.test.BTClient.BTClient"   
+            android:label="@string/app_name" />
+        
+    </application>
+
+</manifest>
