@@ -1,6 +1,8 @@
 # Android-PHP-pythonFlask-Mysql-CloudComputing
 
 This project includes three parts.
+
+
 (1) Website based on python flask which connected to the remote Mysql.I did not put the username and password in these files to make it sercurity.
     what if you are interested with this project, you could email me and i will respon you with the details quickly.
     (use pip install python-*** to install the missing library you do not have in your own computer)
